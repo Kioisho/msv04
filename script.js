@@ -7,9 +7,11 @@ const hiddenImage = document.querySelector(".hidden-image");
 let moved = false;
 let flipped = false;
 
+
 toggleMoveBtn.addEventListener("click", () => {
     if (!moved) {
-        brownBox.style.bottom = "-1300px"; // Se mueve hacia abajo
+        brownBox.style.bottom = "0px";
+        brownBox.style.bottom = "-650px"; // Se mueve hacia abajo
         hiddenText.style.opacity = "1"; // Muestra el texto
         toggleMoveBtn.textContent = "Ocultar";
     } else {
