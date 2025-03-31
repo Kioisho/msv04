@@ -11,7 +11,7 @@ body {
     justify-content: center;
     height: 100vh;
     background-color: #f4f4f4;
-    font-family: Arial, sans-serif;
+    font-family: "Arial", sans-serif;
 }
 
 .container {
@@ -35,6 +35,9 @@ body {
 .white-box {
     background-color: white;
     z-index: 2;
+    text-align: center;
+
+
 }
 
 .brown-box {
@@ -42,8 +45,14 @@ body {
     color: white;
     bottom: -10px; /* Sobresale un poco */
     transform-origin: center;
-    text-align: center;
+    text-align: justify;
     z-index: 1;
+    p {
+        margin: 15px; /* Ajusta el margen según sea necesario */
+    }
+    font-family: "Times New Roman", Arial;
+    
+    
 }
 
 .hidden-text {
@@ -57,6 +66,7 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
+
 }
 
 .buttons {
@@ -76,6 +86,7 @@ button {
     border-radius: 5px;
     transition: background 0.3s;
     margin: 0 10px; /* Agrega margen entre los botones */
+
 }
 
 button:hover {
@@ -84,5 +95,18 @@ button:hover {
 
 img{
     width: 50%;
-    transform: scaleX(-1)
+    transform: scaleX(-1);
+
+}
+
+.white-box {
+    position: relative;
+    padding-bottom: 40px; /* Ajusta según sea necesario */
+}
+
+.extra-text {
+    position: absolute;
+    bottom: 30px; /* Ajusta la posición debajo del recuadro */
+    width: 100%;
+    text-align: center;
 }
